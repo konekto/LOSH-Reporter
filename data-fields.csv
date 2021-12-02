@@ -1,0 +1,9 @@
+KEY,DETIAL,COMMENT
+ghproj,number of projects found on GitHub.com,EXCLUDING open know-how and appropedia
+glcomproj,number of projects found on GitLab.com,
+glosegproj,number of projects found on OSEG’s GitLab instance,
+wifproj,number of projects found on Wikifactory.com,
+oshwaproj,number of projects found in OSHWA’s list of certified projects,
+thingiproj,number of projects found on Thingiverse.com,
+approproj,number of projects found on Appropedia.org,
+okhproj,number of projects found from the Open Know-How project,
