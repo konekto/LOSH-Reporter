@@ -120,8 +120,12 @@ The following @fig:license-dist-ind shows the distribution of licenses under whi
 
 Totalled, @fig:license-dist-total is the overall distribution of licenses used for the _hardware_.
 
-<!--- pie chart showing the overall distribution of `spdxLicense` --> 
+<!--- pie chart showing the overall distribution of `spdxLicense`, sorted by strongly, weakly an non-reciprocal licensing schemes --> 
 {#fig:fig:license-dist-ind}
+
+# Technology and documentation readiness
+
+- OTRL/ODRL assessment? (or mayby under git-based platforms)
 
 # git-based platforms, OKH and Appropedia
 
