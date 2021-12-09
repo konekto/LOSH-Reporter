@@ -76,6 +76,8 @@ The minimum threshold for LOSH to be recognised as an OSH project is to have:
 - a README file and
 - at least one source file (other than the README.md, CONTRIBUTING.md or an image).
 
+<!--- add short description of upload methods (copy from D3.4 + D3.3 report) -->
+
 ## Data input
 
 By the publishing date of this report, the LOSH knowledge base contains:
@@ -93,6 +95,11 @@ By the publishing date of this report, the LOSH knowledge base contains:
 
 <!--- a bar chart with the above mentioned values, each bar splitting into accepted and rejected projects (rejected projects on top) -->
 {#fig:data-input-count}
+
+@fig:data-input-method-dist shows the distribution of upload methods that have been used for this data set.
+
+<!--- bar chart showing the distribution of uploading methods used for LOSH (auto, manifest, manifest-script, manual) -->
+{fig:data-input-method-dist}
 
 ## History
 
