@@ -3,10 +3,11 @@ import logging
 import pathlib
 
 from reporter import generator
+from reporter.generator import Generator
 
 
 def main():
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.DEBUG)
 
     parser = argparse.ArgumentParser(
         prog="reporter.py",
@@ -22,7 +23,9 @@ def main():
     logging.info('Start command...')
 
     if args.command == "generate":
-        return generator.generate(args.report_name)
+        report_generator = Generator(reports_path='./reports')
+
+        return report_generator.generate(args.report_name)
 
     parser.print_help()
 
