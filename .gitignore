@@ -135,4 +135,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea
+out/
+output
+tmp
 
+/reports/*/templ_copy.md
