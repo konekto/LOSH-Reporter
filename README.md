@@ -69,6 +69,8 @@ A base for templating we use a markdown file. As templating engine the reporter 
 
 The reporter automatically executes the SPARQL queries the adds the result data to the template. Therefore, you can use those variables inside the markdown template.
 
+The data for the Apache Jena instance has to be uploaded with the web interface: (http://localhost:3030)
+
 ####  Variables
 Often are the results of SPAREQL queries lists of entries.
 
