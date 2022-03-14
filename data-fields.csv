@@ -1,4 +1,4 @@
-KEY,DETIAL,COMMENT
+KEY,DETAIL,COMMENT
 ghproj,number of projects found on GitHub.com,EXCLUDING open know-how and appropedia
 glcomproj,number of projects found on GitLab.com,
 glosegproj,number of projects found on OSEG’s GitLab instance,
