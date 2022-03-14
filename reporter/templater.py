@@ -102,7 +102,7 @@ def templating(data, args) -> None:
     # get path where the before generated figures lie
     path_to_images = Path(f'./{out_folder}/img').resolve()
 
-    templ_copy_file = f'./reports/{report_name}/templ_copy.md'
+    templ_copy_file = f'./{out_folder}/templ_copy.md'
 
     # first prepare template file:
     # - ensure md-headings are still recognized ('##' is a comment for Mako)
