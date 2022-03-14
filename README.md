@@ -66,7 +66,11 @@ First install all dependencies with `poetry install`.
 The reporter is a CLI tool. It is started by the following command (in the root directory):
 
 ```
-poetry run python reporter/cli.py generate --out <OUTFOLDER> --log_to <LOGGINGTARGET> <REPORTNAME> <format>
+poetry run python reporter/cli.py generate \
+    --out <OUTFOLDER> \
+    --log_to <LOGGINGTARGET> \
+    <REPORTNAME> \
+    <format>
 ```
 
 - `format` is one of: `html / pdf / md`
@@ -80,7 +84,12 @@ poetry run python reporter/cli.py generate --out <OUTFOLDER> --log_to <LOGGINGTA
 Example:
 
 ```
-poetry run python reporter/cli.py --log_to console --out output generate example html
+poetry run python reporter/cli.py \
+    --log_to console \
+    --out output \
+    generate \
+    example \
+    html
 ```
 
 This command will generate a HTML file of the example report.
@@ -135,7 +144,11 @@ get_value(QUERYRESULT,{"KEYTTOFILTER": "FILTERVALUE"}, "VALUEKEY")
 Example:
 
 ```
-query_result = [{count: 100, name: "Test"},{count: 1000, name: "TestAB"}, {count: 50, name: "TestA"} ]
+query_result = [
+    {count: 100, name: "Test"},
+    {count: 1000, name: "TestAB"},
+    {count: 50, name: "TestA"}
+]
 
 count_value = get_value(query_result,{"name": "TestAB"}, "count")
 
@@ -170,12 +183,22 @@ figure("TYPE", x="XVALUESTRING", y="YVALUESTRING", title="TITLE", label="LABEL")
 Example:
 
 ```
-repoHosts = [{count: 100, name: "Test"},{count: 1000, name: "TestAB"}, {count: 50, name: "TestA"} ]
+repoHosts = [
+    {count: 100, name: "Test"},
+    {count: 1000, name: "TestAB"},
+    {count: 50, name: "TestA"}
+]
 
-figure("barchart", x="repoHosts.name", y="repoHosts.count", title="repohosts", label="All repoHost by counts")
-
-That would generate a barchart with names of repoHosts as x-values and counts of the repeHosts as y-values
+figure(
+    "barchart",
+    x="repoHosts.name",
+    y="repoHosts.count",
+    title="repohosts",
+    label="All repoHost by counts")
 ```
+
+That would generate a barchart with names of repoHosts as x-values
+and counts of the repeHosts as y-values
 
 ## License
 
