@@ -144,7 +144,7 @@ Looking into the recent past,
 <!-- NOTE horizontal bar chart with grow rates per platform per each of the past 2 years + a bar for the total grow rate -->
 {#fig:data-hist-grow2}
 
-# Licenses
+# Licenses TODO
 
 What separates a piece of open source hardware from a proprietary one
 is primarily its license.

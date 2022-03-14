@@ -27,29 +27,60 @@ count_oshwa_projects = repohosts
 
 ## General
 
-LOSH 
+<!-- TODO general info about LOSH to be added -->
 
-<!--- general info about LOSH to be added -->
+Efforts partly merged with the [OSHdata project](oshdata.com),
+which published annually reports based on data crawled from the
+[list of OSHWA-certified OSH projects](https://certification.oshwa.org/list.html).
+Since OSHWA published [its API](https://certificationapi.oshwa.org/documentation),
+no crawling is needed anymore.
+And since LOSH is here to collect data also from other platforms,
+we decided to take care of regular OSHdata reports –
+now also including data from other platforms.
 
-Efforts partly merged with the [OSHdata project](oshdata.com), which published annually reports based on data crawled from the [list of OSHWA-certified OSH projects](https://certification.oshwa.org/list.html). Since OSHWA published [its API](https://certificationapi.oshwa.org/documentation), no crawling is needed anymore. And since LOSH is here to collect data also from other platforms, we decided to take care of regular OSHdata reports – now also including data from other platforms.
-
-Generally, all data you will find here is also publicly available in the LOSH knowledge base. This report is generated using the [LOSH-Reporter](https://github.com/OPEN-NEXT/LOSH-Reporter/) tool (GPL-3.0-OR-LATER). All we do is running a bunch of pre-defined queries on LOSH's knowledge base using that tool. If you want to look into the raw data yourself, e.g. to run some self-defined queries, find it [here](https://gitlab.opensourceecology.de/verein/projekte/losh-rdf) ([CC0-1.0](https://gitlab.opensourceecology.de/verein/projekte/losh-rdf/-/blob/main/LICENSE)). The report you are reading is licensed under the Creative Commons Attribution 4.0 International License ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode)). This license covers the entire report, including the text and graphics. OSHdata is a project of the [Open Hardware Observatory e.V. (non-profit)](https://en.oho.wiki/wiki/Imprint) since 2021 (before is was a project of Kenny Consulting Group, LLC).
+Generally,
+all data you will find here is also publicly available in the LOSH knowledge base.
+This report is generated using the [LOSH-Reporter](
+https://github.com/OPEN-NEXT/LOSH-Reporter/) tool (GPL-3.0-OR-LATER).
+All we do is running a bunch of pre-defined queries on LOSH's knowledge base
+using that tool.
+If you want to look into the raw data yourself,
+e.g. to run some self-defined queries,
+find it [here](https://gitlab.opensourceecology.de/verein/projekte/losh-rdf)
+([CC0-1.0](https://gitlab.opensourceecology.de/verein/projekte/losh-rdf/-/blob/main/LICENSE)).
+The report you are reading
+is licensed under the Creative Commons Attribution 4.0 International License
+([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode)).
+This license covers the entire report, including the text and graphics.
+OSHdata is a project of the [Open Hardware Observatory e.V. (non-profit)](https://en.oho.wiki/wiki/Imprint)
+since 2021 (before is was a project of Kenny Consulting Group, LLC).
 
 ## Scope
 
-<!--- brief description of scope to be added -->
+<!-- TODO brief description of scope to be added -->
 
 ## Get in contact with us
 
-OSHdata is hosted by the [Open Hardware Repository e.V. (non-profit)](http://oho.wiki/) since 2021. Feel free to reach out to Robert to get in touch: [rm@oho.wiki](mailto:rm@oho.wiki?cc=mh@oho.wiki&subject=from the LOSH report)
+OSHdata is hosted by the [Open Hardware Repository e.V. (non-profit)](
+http://oho.wiki/) since 2021.
+Feel free to reach out to Robert to get in touch:
+[rm@oho.wiki](mailto:rm@oho.wiki?cc=mh@oho.wiki&subject=from the LOSH report)
 
-LOSH was started inside the EU-H2020-founded [OPEN_NEXT](https://opennext.eu/) project back in 2020 and is hosted and maintained by [Open Source Ecology Germany e.V. (non-profit)](https://ose-germany.de/) since 2022. You can reach these folks via eMail ([verein@ose-germany.de](mailto:verein@ose-germany.de?cc=martin.haeuer@ose-germany.de&subject=from the LOSH report)) or Telegram ([@OSEGWelcome](https://t.me/OSEGWelcome)) – don't be shy; looking forward to e-meet you :)
+LOSH was started inside the EU-H2020-founded [OPEN!NEXT](
+https://opennext.eu/) project back in 2020
+and is hosted and maintained by [Open Source Ecology Germany e.V. (non-profit)](
+https://ose-germany.de/) since 2022.
+You can reach these folks via eMail
+([verein@ose-germany.de](mailto:verein@ose-germany.de?cc=martin.haeuer@ose-germany.de&subject=from%20the%20LOSH%20report))
+or Telegram ([@OSEGWelcome](https://t.me/OSEGWelcome)) –
+don't be shy; looking forward to e-meet you :)
 
-You can also sign up for our newsletter [here]() or follow us on Twitter via [@OSHdata](https://twitter.com/OSHdata).
+You can also [sign up for our newsletter](TODO)
+or follow us on Twitter via [@OSHdata](https://twitter.com/OSHdata).
 
 ## This report…
 
-<!--- brief intro specific to this version of the report to be added -->
+<!-- TODO brief intro specific to this version of the report to be added -->
 
 # OSH Platforms
 
@@ -76,7 +107,7 @@ The minimum threshold for LOSH to be recognised as an OSH project is to have:
 - a README file and
 - at least one source file (other than the README.md, CONTRIBUTING.md or an image).
 
-<!--- add short description of upload methods (copy from D3.4 + D3.3 report) -->
+<!-- TODO add short description of upload methods (copy from D3.4 + D3.3 report) -->
 
 ## Data input
 
@@ -92,49 +123,63 @@ By the publishing date of this report, the LOSH knowledge base contains:
 
 …as illustrated in @fig:projects-count
 
-<!--- a bar chart with the above mentioned values, each bar splitting into accepted and rejected projects (rejected projects on top) -->
-
+<!-- NOTE a bar chart with the above mentioned values, each bar splitting into accepted and rejected projects (rejected projects on top) -->
 ${figure("barchart", y="repoHosts.count", x="repoHosts.repoHost",title="projects-count", label="projects counts")}
 
-@fig:input-methods shows the distribution of upload methods that have been used for this data set.
+@fig:input-methods shows the distribution of upload methods
+that have been used for this data set.
 
-<!--- bar chart showing the distribution of uploading methods used for LOSH (auto, manifest, manifest-script, manual) -->
+<!-- NOTE bar chart showing the distribution of uploading methods used for LOSH (auto, manifest, manifest-script, manual) -->
 ${figure("barchart", x="projectInputMethod.uploadMethod", y="projectInputMethod.count",title="input-methods", label="upload-methods")}
 
 <!--
-(set History Section invisible until there is a history)
+NOTE (set History Section invisible until there is a history)
+
 ## History
 
-Since the first report, published back in January 2022, data input has developed as following: -->
+Since the first report, published back in January 2022,
+data input has developed as following:
 
-<!--- combined historical line diagram of total count of projects per year & for for each platform -->
+<!-- TODO combined historical line diagram of total count of projects per year & for for each platform -->
 
-<!---Looking into the recent past @fig:data-hist-grow2 shows the grow rates for the past two years.-->
-
-<!--- horizontal bar chart with grow rates per platform per each of the past 2 years + a bar for the total grow rate -->
-<!--- {# fig:data-hist-grow2} 
+<!---
+Looking into the recent past,
+@fig:data-hist-grow2 shows the grow rates for the past two years.
 -->
 
-# Licenses STILL TODO
-What separates a piece of open source hardware from a proprietary one is primarily its license.
+<!-- NOTE horizontal bar chart with grow rates per platform per each of the past 2 years + a bar for the total grow rate -->
+<!--
+{# fig:data-hist-grow2}
+-->
 
-<!--- add more info, also linking the OSH legal issues guideline and the tl;dr -->
+-->
 
-The following @fig:license-dist-ind shows the distribution of licenses under which the _hardware_ has been published per platform.
+# Licenses TODO
 
-<!--- 1 pie chart per platform showing the distribution of `spdxLicense` --> 
+What separates a piece of open source hardware from a proprietary one
+is primarily its license.
+
+<!-- TODO add more info, also linking the OSH legal issues guideline and the tl;dr -->
+
+The following @fig:license-dist-ind shows the distribution of licenses
+under which the _hardware_ has been published per platform.
+
+<!-- NOTE 1 pie chart per platform showing the distribution of `spdxLicense` --> 
 ${figure("piechart", y="licenseDistIndNew.count", x="licenseDistIndNew.license",title="license-dist-ind", label="overall distribution of spdxLicense")}
 
-Totalled, @fig:reciprocality is the overall distribution of licenses used for the _hardware_.
+Totalled, @fig:reciprocality is the overall distribution of licenses
+used for the _hardware_.
 
-<!--- pie chart showing the overall distribution of `spdxLicense`, sorted by strongly, weakly an non-reciprocal licensing schemes --> 
+<!-- NOTE pie chart showing the overall distribution of `spdxLicense`, sorted by strongly, weakly an non-reciprocal licensing schemes --> 
 ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.count",title="reciprocality", label="overall distribution of spdxLicense")}
 
 # Technology and documentation readiness
 
-- OTRL/ODRL assessment? (or mayby under git-based platforms)
+<!-- TODO OTRL/ODRL assessment? (or mayby under git-based platforms) -->
 
 # git-based platforms, OKH and Appropedia
+
+<!-- TODO See below -->
 
 - some detailled statistics based on manifest files
 	+ OKH(v1) count + historical grow rate (2 years)
@@ -146,6 +191,8 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 ## Community-based Assessment according to DIN SPEC 3105-2
 
+<!-- TODO See below -->
+
 - CAB data
 	+ project count:
 		- attested/in progress + historical grow rate (2 years)
@@ -156,11 +203,13 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 ### Projects of the year
 
+<!-- TODO See below -->
+
 2…4 projects from OSEG-CAB & OHO-CAB to be briefly presented & promoted
 
-<!--- 2021: MNT Reform, OpenFlexure; something from OHO -->
+<!-- TODO 2021: MNT Reform, OpenFlexure; something from OHO -->
 
-<!--- section to be written manually -->
+<!-- TODO section to be written manually -->
 
 # Wikifactory
 
@@ -178,8 +227,8 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 # Outro
 
-<!--- add brief & friendly outro -->
+<!-- TODO add brief & friendly outro -->
 
 See also
 
-- https://stateofoshw.oshwa.org/
+- <https://stateofoshw.oshwa.org/>
