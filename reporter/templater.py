@@ -102,20 +102,22 @@ def templating(data, args) -> None:
     # get path where the before generated figures lie
     path_to_images = Path(f'./{out_folder}/img').resolve()
 
+    templ_copy_file = f'./reports/{report_name}/templ_copy.md'
+
     # first prepare template file:
     # - ensure md-headings are still recognized ('##' is a comment for Mako)
     # - fill in the the absolut paths for the figure-files
     # for safety reasons: do the changes to a temporary copy of the template file
     with open(Path(f'./reports/{report_name}/template.md'), mode='r', encoding='utf-8') as in_file, \
-            open(Path(f'./reports/{report_name}/templ_copy.md'), mode='w', encoding='utf-8') as out_file:
+            open(Path(templ_copy_file), mode='w', encoding='utf-8') as out_file:
         for line in in_file:
             line = line.replace('##', "${'##'}")
             out_file.write(line)
 
     # read template file
-    if Path(f'./reports/{report_name}/templ_copy.md').exists() is False:
-        raise FileNotFound(f'template file not found at: ./reports/{report_name}/templ_copy.md')
-    template = Template(filename=f'./reports/{report_name}/templ_copy.md')
+    if Path(templ_copy_file).exists() is False:
+        raise FileNotFound(f'template file not found at: "{templ_copy_file}"')
+    template = Template(filename=templ_copy_file)
 
     def figure(type, **fig_options):
         fig_options['graph_type'] = type
