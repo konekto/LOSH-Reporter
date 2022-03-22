@@ -27,7 +27,7 @@ count_oshwa_projects = repohosts
 
 ## General
 
-<!-- TODO general info about LOSH to be added -->
+<!-- TODO Add general info about LOSH -->
 
 Efforts partly merged with the [OSHdata project](oshdata.com),
 which published annually reports based on data crawled from the
@@ -57,7 +57,7 @@ since 2021 (before is was a project of Kenny Consulting Group, LLC).
 
 ## Scope
 
-<!-- TODO brief description of scope to be added -->
+<!-- TODO Add brief description of scope -->
 
 ## Get in contact with us
 
@@ -80,7 +80,7 @@ or follow us on Twitter via [@OSHdata](https://twitter.com/OSHdata).
 
 ## This report…
 
-<!-- TODO brief intro specific to this version of the report to be added -->
+<!-- TODO brief intro specific to this version of the report -->
 
 # OSH Platforms
 
@@ -89,6 +89,7 @@ or follow us on Twitter via [@OSHdata](https://twitter.com/OSHdata).
 Currently, LOSH collects data from the following platforms:
 
 - [GitHub.com](http://github.com/)
+- [GitLab.com](https://gitlab.com/)
 - [GitLab.OpenSourceEcology.de](https://gitlab.opensourceecology.de/)
 - [Wikifactory.com](https://wikifactory.com/)
 - [OSHWA Certification List](https://certification.oshwa.org/list.html)
@@ -113,24 +114,27 @@ The minimum threshold for LOSH to be recognised as an OSH project is to have:
 
 By the publishing date of this report, the LOSH knowledge base contains:
 
-- ${get_value(repoHosts,{"repoHost": "github"}, "count")} from [GitHub.com](http://github.com/) (not counting Open Know-How or Appropedia.org) (${get_value(repoHosts, {"repoHost": "github"}, "percent")} % of all its projects)
-- ${get_value(repoHosts,{"repoHost": "ose"}, "count")} from [GitLab.OpenSourceEcology.de](https://gitlab.opensourceecology.de/) (${get_value(repoHosts, {"repoHost": "ose"}, "percent")} % of all its projects)
-- ${get_value(repoHosts,{"repoHost": "Wikifactory"}, "count")} from [Wikifactory.com](https://wikifactory.com/) (${get_value(repoHosts, {"repoHost": "Wikifactory"}, "percent")} % of all its projects)
-- ${get_value(repoHosts,{"repoHost": "OSHWA"}, "count")} from [OSHWA Certification List](https://certification.oshwa.org/list.html) (${get_value(repoHosts, {"repoHost": "OSHWA"}, "percent")} % of all its projects)
-- ${get_value(repoHosts, {"repoHost": "thingiverse"}, "count")} from [Thingiverse.com](https://www.thingiverse.com/) (${get_value(repoHosts, {"repoHost": "thingiverse"}, "percent")} % of all its projects)
-- ${get_value(repoHosts,{"repoHost": "appropedia"}, "count")} from [Appropedia.org](https://appropedia.org/) (${get_value(repoHosts, {"repoHost": "appropedia"}, "percent")} % of all its projects)
-- ${get_value(repoHosts,{"repoHost": "okh"}, "count")} from [Open Know-How](https://openknowhow.org/) (${get_value(repoHosts, {"repoHost": "okh"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "github.com"}, "count")} from [GitHub.com](http://github.com/) (not counting Open Know-How or Appropedia.org) (${get_value(repoHosts, {"repoHost": "github.com"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "gitlab.com"}, "count")} from [GitLab.com](http://gitlab.com/) (not counting Open Know-How or Appropedia.org) (${get_value(repoHosts, {"repoHost": "gitlab.com"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "source.mnt.re"}, "count")} from [source.mnt.re](https://source.mnt.re) (${get_value(repoHosts, {"repoHost": "source.mnt.re"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "wikifactory.com"}, "count")} from [Wikifactory.com](https://wikifactory.com/) (${get_value(repoHosts, {"repoHost": "wikifactory.com"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "en.oho.wiki"}, "count")} from [Open Hardware Observatory](https://en.oho.wiki) (${get_value(repoHosts, {"repoHost": "en.oho.wiki"}, "percent")} % of all its projects)
+- ${get_value(repoHosts, {"repoHost": "www.thingiverse.com"}, "count")} from [Thingiverse.com](https://www.thingiverse.com/) (${get_value(repoHosts, {"repoHost": "www.thingiverse.com"}, "percent")} % of all its projects)
 
-…as illustrated in @fig:projects-count
+<!--
+- ${get_value(repoHosts,{"repoHost": "appropedia.org"}, "count")} from [Appropedia.org](https://appropedia.org/) (${get_value(repoHosts, {"repoHost": "appropedia.org"}, "percent")} % of all its projects)
+-->
+
+…as illustrated in @fig:repo-hosts
 
 <!-- NOTE a bar chart with the above mentioned values, each bar splitting into accepted and rejected projects (rejected projects on top) -->
-${figure("barchart", y="repoHosts.count", x="repoHosts.repoHost",title="projects-count", label="projects counts")}
+${figure("barchart", y="repoHosts.count", x="repoHosts.repoHost",title="repo-hosts", label="count")}
 
 @fig:input-methods shows the distribution of upload methods
 that have been used for this data set.
 
 <!-- NOTE bar chart showing the distribution of uploading methods used for LOSH (auto, manifest, manifest-script, manual) -->
-${figure("barchart", x="projectInputMethod.uploadMethod", y="projectInputMethod.count",title="input-methods", label="upload-methods")}
+${figure("barchart", x="projectInputMethod.uploadMethod", y="projectInputMethod.count",title="input-methods", label="count")}
 
 <!--
 NOTE (set History Section invisible until there is a history)
