@@ -35,7 +35,7 @@ which published annually reports based on data crawled from the
 Since OSHWA published [its API](https://certificationapi.oshwa.org/documentation),
 no crawling is needed anymore.
 And since LOSH is here to collect data also from other platforms,
-we decided to take care of regular OSHdata reports –
+we decided to take care of regular OSH data reports –
 now also including data from other platforms.
 
 Generally,
@@ -179,7 +179,7 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 # Technology and documentation readiness
 
-<!-- TODO OTRL/ODRL assessment? (or mayby under git-based platforms) -->
+<!-- TODO OTRL/ODRL assessment? (or maybe under git-based platforms) -->
 
 # git-based platforms, OKH and Appropedia
 
