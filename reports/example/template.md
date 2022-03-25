@@ -118,6 +118,7 @@ By the publishing date of this report, the LOSH knowledge base contains:
 - ${get_value(repoHosts,{"repoHost": "gitlab.com"}, "count")} from [GitLab.com](http://gitlab.com/) (not counting Open Know-How or Appropedia.org) (${get_value(repoHosts, {"repoHost": "gitlab.com"}, "percent")} % of all its projects)
 - ${get_value(repoHosts,{"repoHost": "source.mnt.re"}, "count")} from [source.mnt.re](https://source.mnt.re) (${get_value(repoHosts, {"repoHost": "source.mnt.re"}, "percent")} % of all its projects)
 - ${get_value(repoHosts,{"repoHost": "wikifactory.com"}, "count")} from [Wikifactory.com](https://wikifactory.com/) (${get_value(repoHosts, {"repoHost": "wikifactory.com"}, "percent")} % of all its projects)
+- ${get_value(repoHosts,{"repoHost": "certification.oshwa.org"}, "count")} from [OSHWA Certification List](https://certification.oshwa.org/list.html) (${get_value(repoHosts, {"repoHost": "certification.oshwa.org"}, "percent")} % of all its projects)
 - ${get_value(repoHosts,{"repoHost": "en.oho.wiki"}, "count")} from [Open Hardware Observatory](https://en.oho.wiki) (${get_value(repoHosts, {"repoHost": "en.oho.wiki"}, "percent")} % of all its projects)
 - ${get_value(repoHosts, {"repoHost": "www.thingiverse.com"}, "count")} from [Thingiverse.com](https://www.thingiverse.com/) (${get_value(repoHosts, {"repoHost": "www.thingiverse.com"}, "percent")} % of all its projects)
 
