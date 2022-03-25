@@ -186,24 +186,24 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 <!-- TODO See below -->
 
 - some detailled statistics based on manifest files
-	+ OKH(v1) count + historical grow rate (2 years)
-		* fields used (vertical bar chart) <!--- would require parsing the original YAML files-->
-	+ appropedia count + historical grow rate (2 years)
-		* fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
-	+ on git-based platforms OKH-LOSH (manifest) count + historical grow rate (2 years)
-		* fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
+  - OKH(v1) count + historical grow rate (2 years)
+    - fields used (vertical bar chart) <!--- would require parsing the original YAML files-->
+  - appropedia count + historical grow rate (2 years)
+    - fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
+  - on git-based platforms OKH-LOSH (manifest) count + historical grow rate (2 years)
+    - fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
 
 ## Community-based Assessment according to DIN SPEC 3105-2
 
 <!-- TODO See below -->
 
 - CAB data
-	+ project count:
-		- attested/in progress + historical grow rate (2 years)
-		- OHO / OSEG
-	* certification per organisation
-	* average assessment time (first submission…final attestation) + variance
-	* average number of comments per asssessment + variance for top & bottom 10% of assessment time
+  - project count:
+    - attested/in progress + historical grow rate (2 years)
+    - OHO / OSEG
+  - certification per organisation
+  - average assessment time (first submission…final attestation) + variance
+  - average number of comments per asssessment + variance for top & bottom 10% of assessment time
 
 ### Projects of the year
 
@@ -222,8 +222,8 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 # OSHWA
 
 - data mostly like old OSHdata report
-	+ certification per organisation
-	+ etc.
+  - certification per organisation
+  - etc.
 
 # Thingiverse
 
