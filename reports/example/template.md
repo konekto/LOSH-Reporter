@@ -27,7 +27,7 @@ count_oshwa_projects = repohosts
 
 ## General
 
-<!-- TODO Add general info about LOSH -->
+<!-- TODO Moe Add general info about LOSH -->
 
 Efforts partly merged with the [OSHdata project](oshdata.com),
 which published annually reports based on data crawled from the
@@ -57,7 +57,7 @@ since 2021 (before is was a project of Kenny Consulting Group, LLC).
 
 ## Scope
 
-<!-- TODO Add brief description of scope -->
+<!-- TODO Moe Add brief description of scope -->
 
 ## Get in contact with us
 
@@ -80,7 +80,7 @@ or follow us on Twitter via [@OSHdata](https://twitter.com/OSHdata).
 
 ## This report…
 
-<!-- TODO brief intro specific to this version of the report -->
+<!-- TODO Moe brief intro specific to this version of the report -->
 
 # OSH Platforms
 
@@ -108,7 +108,7 @@ The minimum threshold for LOSH to be recognised as an OSH project is to have:
 - a README file and
 - at least one source file (other than the README.md, CONTRIBUTING.md or an image).
 
-<!-- TODO add short description of upload methods (copy from D3.4 + D3.3 report) -->
+<!-- TODO Moe add short description of upload methods (copy from D3.4 + D3.3 report) -->
 
 ## Data input
 
@@ -145,7 +145,7 @@ NOTE (set History Section invisible until there is a history)
 Since the first report, published back in January 2022,
 data input has developed as following:
 
-<!-- TODO combined historical line diagram of total count of projects per year & for for each platform -->
+<!-- TODO ??? Robin combined historical line diagram of total count of projects per year & for each platform -->
 
 <!---
 Looking into the recent past,
@@ -164,7 +164,7 @@ Looking into the recent past,
 What separates a piece of open source hardware from a proprietary one
 is primarily its license.
 
-<!-- TODO add more info, also linking the OSH legal issues guideline and the tl;dr -->
+<!-- TODO Moe add more info, also linking the OSH legal issues guideline and the tl;dr -->
 
 The following @fig:license-dist-ind shows the distribution of licenses
 under which the _hardware_ has been published per platform.
@@ -180,23 +180,23 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 # Technology and documentation readiness
 
-<!-- TODO OTRL/ODRL assessment? (or maybe under git-based platforms) -->
+<!-- TODO Robin OTRL/ODRL assessment? (or maybe under git-based platforms) -->
 
 # git-based platforms, OKH and Appropedia
 
-<!-- TODO See below -->
+<!-- TODO Robin See below -->
 
 - some detailled statistics based on manifest files
   - OKH(v1) count + historical grow rate (2 years)
     - fields used (vertical bar chart) <!--- would require parsing the original YAML files-->
-  - appropedia count + historical grow rate (2 years)
+  - appropedia count + historical grow rate (2 years)Robin
     - fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
   - on git-based platforms OKH-LOSH (manifest) count + historical grow rate (2 years)
     - fields used (vertical bar chart) <!--- would require parsing the original TOML files-->
 
 ## Community-based Assessment according to DIN SPEC 3105-2
 
-<!-- TODO See below -->
+<!-- TODO Robin See below -->
 
 - CAB data
   - project count:
@@ -208,19 +208,23 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 ### Projects of the year
 
-<!-- TODO See below -->
+<!-- TODO ??? See below -->
 
 2…4 projects from OSEG-CAB & OHO-CAB to be briefly presented & promoted
 
-<!-- TODO 2021: MNT Reform, OpenFlexure; something from OHO -->
+<!-- TODO Moe 2021: MNT Reform, OpenFlexure; something from OHO -->
 
-<!-- TODO section to be written manually -->
+<!-- TODO Moe section to be written manually -->
 
 # Wikifactory
+
+<!-- TODO ??? See below -->
 
 - some detailled statistics based on their API
 
 # OSHWA
+
+<!-- TODO ??? See below -->
 
 - data mostly like old OSHdata report
   - certification per organisation
@@ -232,7 +236,7 @@ ${figure("barchart", x="licensesReciprocality.reType", y="licensesReciprocality.
 
 # Outro
 
-<!-- TODO add brief & friendly outro -->
+<!-- TODO Moe add brief & friendly outro -->
 
 See also
 
