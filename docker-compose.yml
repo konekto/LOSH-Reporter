@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  reporter:
+    build: .
+    volumes:
+      - ./output:/app/output
+    env_file: .env
